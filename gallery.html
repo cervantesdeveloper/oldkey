@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Key</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="menu menu-scrolled">
+        <div class="menu__logo">
+            <a href="./">
+                <img src="assets/logo_gold.svg" alt="Oldkey">
+            </a>
+        </div>
+
+        <div class="burger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+        </div>
+
+        <nav class="nav-desktop hidden">
+            <a href="gallery.html" class="nav-desktop__link">Galería</a>
+            <a href="contact.html" class="nav-desktop__link">Contacto</a>
+            <a href="index.html#order" class="btn btn--primary">Hacer pedido</a>
+        </nav>
+    </div>
+
+    <nav class="nav-mobile inactive">
+        <a href="gallery.html" class="nav-mobile__link">Galería</a>
+        <a href="contact.html" class="nav-mobile__link">Contacto</a>
+        <a href="index.html#order" class="nav-mobile__link">Hacer pedido</a>
+    </nav>
+
+    
+
+    <article class="article">
+        <div class="article__heading">
+            <h2>Galería</h2>
+            <p>Nuestro trabajo habla por nosotros</p>
+        </div>
+        <div class="article__content">
+            <div class="gallery">
+                <a href="gallery/gal_01.jpg" data-lightbox="gallery">
+                    <picture>
+                        <source srcset="gallery/gal_01.webp">
+                        <img src="gallery/gal_01.jpg" alt="pintura de coyote auyando" loading="lazy">
+                    </picture>
+                </a>
+
+                <a href="gallery/gal_02.jpg" data-lightbox="gallery">
+                    <picture>
+                        <source srcset="gallery/gal_02.webp">
+                        <img src="gallery/gal_02.jpg" alt="una linda cachorrilla llamada hachy">
+                    </picture>
+                </a>
+
+                <a href="gallery/gal_03.jpg" data-lightbox="gallery">
+                    <picture>
+                        <source srcset="gallery/gal_03.webp">
+                        <img src="gallery/gal_03.jpg" alt="boinito perro que ya ha cruzado el arcoiris" loading="lazy">
+                    </picture>
+                </a>
+
+                <a href="gallery/gal_04.jpg" data-lightbox="gallery">
+                    <picture>
+                        <source srcset="gallery/gal_04.webp">
+                        <img src="gallery/gal_04.jpg" alt="pintura de coyote auyando" loading="lazy">
+                    </picture>
+                </a>
+
+                <a href="gallery/gal_05.jpg" data-lightbox="gallery">
+                    <picture>
+                        <source srcset="gallery/gal_05.webp">
+                        <img src="gallery/gal_05.jpg" alt="pintura de coyote auyando" loading="lazy">
+                    </picture>
+                </a>
+
+                <a href="gallery/gal_06.jpg" data-lightbox="gallery">
+                    <picture>
+                        <source srcset="gallery/gal_06.webp">
+                        <img src="gallery/gal_06.jpg" alt="pintura de coyote auyando" loading="lazy">
+                    </picture>
+                </a>
+            </div>
+        </div>
+    </article>
+
+    
+   
+
+    <footer class="footer">
+        <div class="nav-footer">
+            <div class="nav-footer__media">
+                <a href="https://www.instagram.com/oldkey.ok/" target="_blank">
+                    <img src="assets/Instagram_Logo.svg" alt="Instagram">
+                </a>
+                <a href="https://www.tiktok.com/@oldkey.ok" target="_blank">
+                    <img src="assets/tiktok_logo.svg" alt="Instagram">
+                </a>
+            </div>
+            <div class="nav-footer__legals">
+                <a href="privacidad.html">Aviso de privacidad</a>
+                <a href="terminos.html">Terminos y condiciones</a>
+            </div>
+        </div>
+        <div class="credits">
+            <p>2022 <a href="https://cervantesdeveloper.com/" target="_blank">Cervantes Developer</a></p>
+        </div>
+    </footer>
+    
+    
+    <script src="JS/lightbox-plus-jquery.min.js"></script>
+    <script src="JS/gallery.js" type="module"></script>
+</body>
+</html>

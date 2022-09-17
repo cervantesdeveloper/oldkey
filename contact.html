@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Key</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="menu menu-scrolled">
+        <div class="menu__logo">
+            <a href="./">
+                <img src="assets/logo_gold.svg" alt="Oldkey">
+            </a>
+        </div>
+
+        <div class="burger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+        </div>
+
+        <nav class="nav-desktop hidden">
+            <a href="gallery.html" class="nav-desktop__link">Galería</a>
+            <a href="contact.html" class="nav-desktop__link">Contacto</a>
+            <a href="index.html#order" class="btn btn--primary">Hacer pedido</a>
+        </nav>
+    </div>
+
+    <nav class="nav-mobile inactive">
+        <a href="gallery.html" class="nav-mobile__link">Galería</a>
+        <a href="contact.html" class="nav-mobile__link">Contacto</a>
+        <a href="index.html#order" class="nav-mobile__link">Hacer pedido</a>
+    </nav>
+
+    <article class="article">
+        <div class="article__heading">
+            <h2>Mandanos un mensaje</h2>
+            <p>¿Tienes alguna duda o comentario?</p>
+        </div>
+
+        <div class="article__content">
+            <form action="https://formsubmit.co/f09f834f33c6d0227a5d7007a786d511" class="form" id="contactForm">
+
+                <label for="name">Nombre</label>
+                <input type="text" name="name" title="Por favor ingrese solo letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required tabindex="1">
+
+                <label for="lastname">Apellido</label>
+                <input type="text" name="lastname" title="Por favor ingrese solo letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required tabindex="2">
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email"  title="Por favor ingrese un correo electrónico valido" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required required tabindex="3">
+
+                <label for="comments">Comentarios</label>
+                <textarea name="comments"  data-pattern="^.{1,255}$" title="Tu comentario no debe exceder los 255 caracteres" required tabindex="6"></textarea>
+                
+                <button class="btn btn--primary" type="submit">Enviar</button>
+
+                <div class="form__loader hidden">
+                    <span class="loader"></span>
+                </div>
+                <div class="form__response hidden">
+                    <p>Tu Información ha sido enviada, nos pondremos en contacto lo antes posible</p>
+                </div>
+            </form>
+        </div>
+    </article>    
+
+    <footer class="footer">
+        <div class="nav-footer">
+            <div class="nav-footer__media">
+                <a href="https://www.instagram.com/oldkey.ok/" target="_blank">
+                    <img src="assets/Instagram_Logo.svg" alt="Instagram">
+                </a>
+                <a href="https://www.tiktok.com/@oldkey.ok" target="_blank">
+                    <img src="assets/tiktok_logo.svg" alt="Instagram">
+                </a>
+            </div>
+            <div class="nav-footer__legals">
+                <a href="privacidad.html">Aviso de privacidad</a>
+                <a href="terminos.html">Terminos y condiciones</a>
+            </div>
+        </div>
+        <div class="credits">
+            <p>2022 <a href="https://cervantesdeveloper.com/" target="_blank">Cervantes Developer</a></p>
+        </div>
+    </footer>
+
+    <script src="JS/contact.js" type="module"></script>
+</body>
+</html>
