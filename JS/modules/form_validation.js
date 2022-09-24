@@ -35,7 +35,7 @@ export default function formValidation(form, inputs, loader, response){
 
         $loader.classList.remove("hidden");
 
-        fetch("https://formsubmit.co/ajax/ale_vieyra39@hotmail.com", {
+        fetch("https://formsubmit.co/ajax/oldkey.ok@gmail.com", {
             method: "POST",
             body: new FormData(e.target)
         })
